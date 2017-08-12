@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+		#content {
+			width: 100px;
+			height: 100px;
+			background: #abc;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="content"></div>
+	
+<script type="text/javascript">
+window.onload = function () {
+	var oContent = document.getElementById("content");
+	var x = 0;
+	var y = 0;
+	var targetX = 0;
+	var targetY = 0;
+	//鼠标左键按下拖动
+	move();
+	//鼠标左键松开停止拖动
+	document.onmouseup = function () {
+		document.onmousemove = null;
+		// oContent.onmousedown = null;
+		// move();
+	}
+	//封装鼠标左键按下拖动函数
+	function move () {
+		oContent.onmousedown = function (ev) {
+			var oE = ev || event;
+			x = oE.clientX - oContent.offsetLeft;
+			y = oE.clientY - oContent.offsetTop;
+			document.onmousemove = function (ev) {
+				var oEv = ev || event;
+				targetX = oEv.clientX;
+				targetY = oEv.clientY;
+				if (targetX - x < 0) {
+					oContent.style.left = 0;
+				}else if (targetX - x > window.innerWidth - oContent.offsetWidth) {
+					oContent.style.left = window.innerWidth - oContent.offsetWidth + "px";
+				}else {
+					oContent.style.left = targetX - x + "px";
+				}
+				if (targetY - y < 0) {
+					oContent.style.top = 0;
+				}else if (targetY - y > window.innerHeight - oContent.offsetHeight) {
+					oContent.style.top = window.innerHeight - oContent.offsetHeight + "px";
+				}else {
+					oContent.style.top = targetY - y + "px";
+				}
+				console.log(window.innerHeight)
+			}
+		}
+	}
+}
+</script>
+</body>
+</html>
