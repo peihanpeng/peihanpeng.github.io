@@ -1,0 +1,160 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body {
+	font-size: .16rem;
+}
+#header {
+	width: 100%;
+	height: .93rem;
+	display: flex;
+/*	background: pink;*/
+}
+#header .left {
+	float: left;
+	width: 1.55rem;
+	height: 100%;
+/*	background: greenyellow;*/
+}
+#header .position_logo {
+	margin: .29rem 0 0 .29rem;
+	width: .31rem;
+	height: .3rem;
+	float: left;
+	background: url(../img/positionLogo.png) no-repeat;
+	background-size: .31rem .3rem;
+}
+#header .city {
+	float: left;
+	width: .83rem;
+	height: 100%;
+	margin-left: .1rem;
+	color: #f69;
+	font-size: .26rem;
+	line-height: .93rem;
+/*	background: white;
+*/}
+#header .center {
+	float: left;
+	width: 4.96rem;
+	height: 100%;
+	background: url(../img/radiuRectangle.png) no-repeat 0 .17rem;
+	background-size: 4.96rem .58rem;
+	line-height: .93rem;
+}
+#header .search {
+	font-size: .26rem;
+	margin-left: .7rem;
+	border: none;
+	text-indent: 1em;
+	letter-spacing: .1em;
+	outline: medium;
+	
+}
+#header .right {
+	float: left;
+	width: .68rem;
+	height: 100%;
+	margin-left: .33rem;
+	background: url(../img/information.png) no-repeat .2rem .3rem;
+	background-size: .37rem .37rem;
+}
+#content1 {
+	width: 100%;
+	height: 3.1rem;
+	position: relative;
+	/*background: greenyellow;*/
+}
+#content1 .picture_box {
+	width: 500%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;		
+}
+#content1 .picture_box li {
+	width: 20%;
+	height: 100%;
+	background: url(../img/lunbotu.jpg) no-repeat;
+	background-size: 7.5rem 3.1rem;
+	float: left;
+}
+#content1 .radius {
+	width: 100%;
+	height: .22rem;
+	position: absolute;
+	bottom: .12rem;
+	text-align: center;
+	line-height: .22rem;
+/*	background: red;*/
+}
+#content1 .radius li {
+	display: inline-block;
+	width: .12rem;
+	height: .12rem;
+	background: #fff;
+	margin: auto .09rem;
+	border-radius: 50%;
+}
+#content1 .radius .active {
+	border: .02rem solid #fff;
+	background: none;
+	
+}
+#content2 {
+	width: 100%;
+	height: 2.02rem;
+	position: relative;
+	background: red;
+}
+#content2 .picture_box {
+	width: 6.9rem;
+	height: 1.62rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: yellow;
+}
+/*#content2 .picture_box*/
+
+
+
+
+
+
+/*@media screen and (min-width: 320px) {html{font-size:50px;}}
+
+@media screen and (min-width: 360px) {html{font-size:56.25px;}}
+
+@media screen and (min-width: 375px) {html{font-size:58.59375px;}}
+
+@media screen and (min-width: 400px) {html{font-size:62.5px;}}
+
+@media screen and (min-width: 414px) {html{font-size:64.6875px;}}
+
+@media screen and (min-width: 440px) {html{font-size:68.75px;}}
+
+@media screen and (min-width: 480px) {html{font-size:75px;}}
+
+@media screen and (min-width: 520px) {html{font-size:81.25px;}}
+
+@media screen and (min-width: 560px) {html{font-size:87.5px;}}
+
+@media screen and (min-width: 600px) {html{font-size:93.75px;}}
+
+@media screen and (min-width: 640px) {html{font-size:100px;}}
+
+@media screen and (min-width: 680px) {html{font-size:106.25px;}}
+
+@media screen and (min-width: 720px) {html{font-size:112.5px;}}
+
+@media screen and (min-width: 760px) {html{font-size:118.75px;}}
+
+@media screen and (min-width: 800px) {html{font-size:125px;}}
+
+@media screen and (min-width: 960px) {html{font-size:150px;}}*/
