@@ -5,6 +5,8 @@
 }
 body {
 	font-size: .16rem;
+	max-width: 7.5rem;
+	background: #f2f2f2;
 }
 #header {
 	width: 100%;
@@ -65,17 +67,18 @@ body {
 	width: 100%;
 	height: 3.1rem;
 	position: relative;
+	overflow: hidden;
 	/*background: greenyellow;*/
 }
 #content1 .picture_box {
-	width: 500%;
+	width: 600%;
 	height: 100%;
 	overflow: hidden;
 	position: absolute;
 	left: 0;		
 }
 #content1 .picture_box li {
-	width: 20%;
+/*	width: 20%;*/
 	height: 100%;
 	background: url(../img/lunbotu.jpg) no-repeat;
 	background-size: 7.5rem 3.1rem;
@@ -99,15 +102,14 @@ body {
 	border-radius: 50%;
 }
 #content1 .radius .active {
-	border: .02rem solid #fff;
+	border: .03rem solid #fff;
 	background: none;
-	
 }
 #content2 {
 	width: 100%;
 	height: 2.02rem;
 	position: relative;
-	background: red;
+	background: #fff;
 }
 #content2 .picture_box {
 	width: 6.9rem;
@@ -118,13 +120,313 @@ body {
 	left: 0;
 	right: 0;
 	margin: auto;
-	background: yellow;
+	/*background: yellow;*/
 }
-/*#content2 .picture_box*/
+#content2 .picture_box > div {
+	height: 100%;
+}
+#content2 .picture_box .affordable {
+	float: left;
+	width: 3.45rem;
+	background: url(../img/affordable.jpg) no-repeat;
+	background-size: 3.46rem 1.62rem;
+}
+#content2 .picture_box .fashion {
+	float: right;
+	width: 3.42rem;
+	background: url(../img/fashion.jpg) no-repeat;
+	background-size: 3.46rem 1.62rem;
+}
+#content3 {
+	width: 100%;
+	height: 2rem;
+	margin: .2rem 0;
+	/*background: peachpuff;*/
+}
+#content3 > div {
+	width: 3.74rem;
+	height: 100%;
+	/*display: inline-block;*/
+	float: left;
+	background-size: 3.74rem 2rem;
+}
+#content3 .left {
+	background: url(../img/desire.jpg) no-repeat;
+	background-size: 3.74rem 2rem;
+}
+#content3 .right {
+	background: url(../img/fashion2.jpg) no-repeat;
+	background-size: 3.74rem 2rem;
+}
+#content4 {
+	width: 100%;
+	background: #fff;
+}
+#content4 .title {
+	width: 100%;
+	height: 1.17rem;
+}
+#content4 .title .title_box {
+	overflow: hidden;
+	padding: .28rem 0 .46rem;
+	width: 100%;
+}
+#content4 .title .seckill {
+	float: left;
+	width: 1.11rem;
+	height: .34rem;
+	background: url(../img/seckill.jpg) no-repeat;
+	background-size: 1.11rem .34rem;
+	margin-left: .29rem;
+}
+#content4 .title .count_down {
+	float: left;
+}
+#content4 .title .count_down > div {
+	margin-left: .08rem;
+	width: .45rem;
+	height: .35rem;
+	float: left;
+	background: #f2f2f2;
+	text-align: center;
+	line-height: .35rem;
+}
+#content4 .title .count_down > span {
+	display: block;
+	float: left;
+	font-size: .2rem;
+	margin-left: .1rem;
+}
+#content4 .title .count_down .hours {
+	margin-left: .2rem;
+}
+#content4 .title .low_price {
+	float: right;
+	width: 1.75rem;
+	height: .45rem;
+	margin-right: .3rem;
+	background: url(../img/low_price.png) no-repeat;
+	background-size: 1.75rem .45rem;
+}
+#content4 .content {
+	width: 100%;
+	height: 2.96rem;
+	display: flex;
+/*	background: hotpink;*/
+}
+#content4 .content > div{
+	float: left;
+	width: 1.8rem;
+	height: 2.61rem;
+	margin-left: .1rem;
+}
+#content4 .content .commodity1 {
+	background: url(../img/hot_sale.png) no-repeat;
+	background-size: 1.8rem 2.61rem;
+}
+#content4 .content .commodity2 {
+	background: url(../img/material_benefit.png) no-repeat;
+	background-size: 1.8rem 2.61rem;
+}
+#content4 .content .commodity3 {
+	background: url(../img/recommend.png) no-repeat;
+	background-size: 1.8rem 2.61rem;
+}
+#content4 .content .commodity4 {
+	background: url(../img/129.png) no-repeat;
+	background-size: 1.8rem 2.61rem;
+}
+#content5 {
+	overflow: hidden;
+	display: flex;
+}
+#content5 > div{
+	width: 3.74rem;
+	height: 2rem;
+}
 
-
-
-
+#content5 .left {
+	float: left;
+	background: url(../img/Chock.png) no-repeat;
+	background-size: 3.74rem 2rem;
+}
+#content5 .right {
+	float: right;
+	background: url(../img/desire.jpg) no-repeat;
+	background-size: 3.74rem 2rem;
+}
+#content6 {
+	display: flex;
+}
+#content6 .content {
+	width: 7.2rem;
+	height: 1.8rem;
+	background: url(../img/girl.png) no-repeat;
+	background-size: 7.2rem 1.8rem;
+	margin: .16rem;
+}
+#content7 {
+	width: 100%;
+	background: #fff;
+}
+#content7 .title {
+	width: 100%;
+}
+#content7 .title .title_box {
+	padding: .27rem 0 .46rem;
+	overflow: hidden;
+}
+#content7 .title .title_box .left {
+	float: left;
+	width: 1.95rem;
+	height: .35rem;
+	background: url(../img/find_nice_shop.png) no-repeat;
+	background-size: 1.95rem .35rem;
+	margin-left: .3rem;
+}
+#content7 .title .title_box .right {
+	float: right;
+	margin-right: .3rem;
+	width: 1.95rem;
+	height: .45rem;
+	background: url(../img/your_favorite.png) no-repeat;
+	background-size: 1.95rem .45rem;
+}
+#content7 .content {
+	display: flex;
+	overflow: hidden;
+	margin-bottom: .4rem;
+}
+#content7 .content > div {
+	float: left;
+	width: 1.2rem;
+	height: 1.72rem;
+	margin-left: .25rem;
+}
+#content7 .content .beauti {
+	background: url(../img/No.1.png) no-repeat;
+	background-size: 1.2rem 1.72rem;
+}
+#content7 .content .cm_clothing {
+	height: 1.75rem;
+	background: url(../img/No.2.png) no-repeat;
+	background-size: 1.2rem 1.75rem;
+}
+#content7 .content .earth {
+	background: url(../img/No.3.png) no-repeat;
+	background-size: 1.2rem 1.72rem;
+}
+#content7 .content .on {
+	background: url(../img/No.4.png) no-repeat;
+	background-size: 1.2rem 1.72rem;
+	
+}
+#content7 .content .asos_clothing {
+	height: 1.75rem;
+	background: url(../img/asos_clothing.png) no-repeat;
+	background-size: 1.2rem 1.75rem;
+}
+#guess {
+	text-align: center;
+	color: #e0e0e0;
+	font-size: .2rem;
+	margin-bottom: .42rem;
+}
+#guess hr {
+	display: inline-block;
+	width: 2.76rem;
+	border: none;
+	border-top: .01rem solid #e0e0e0;	
+	padding-bottom: .05rem;
+}
+#content8 {
+	margin-bottom: 1rem;
+}
+#content8 .content{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 7.09rem;
+}
+#content8 .content > div{
+	float: left;
+	width: 3.44rem;
+	height: 4.72rem;
+	margin-bottom: .21rem;
+}
+#content8 .rt {
+	margin-left: .2rem;
+}
+#content8 .ct1 {
+	background: url(../img/ct8_ct1.png) no-repeat;
+	background-size: 3.44rem 4.72rem;
+}
+#content8 .ct2 {
+	background: url(../img/ct8_ct2.png) no-repeat;
+	background-size: 3.44rem 4.72rem;
+}
+#content8 .ct3 {
+	background: url(../img/ct8_ct3.png) no-repeat;
+	background-size: 3.44rem 4.72rem;
+}
+#content8 .ct4 {
+	background: url(../img/ct8_ct4.png) no-repeat;
+	background-size: 3.44rem 4.72rem;
+}
+#content8 .ct5 {
+	background: url(../img/ct8_ct5.png) no-repeat;
+	background-size: 3.44rem 4.72rem;
+}
+#content8 .ct6 {
+	background: url(../img/ct8_ct6.png) no-repeat;
+	background-size: 3.44rem 4.72rem;
+}
+#navigation {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: .98rem;
+	background: #fff;
+	font-size: 0;
+}
+#navigation > a {
+	width: 25%;
+	height: 100%;
+	text-decoration: none;
+	display: inline-block;
+	font-size: .2rem;
+	text-align: center;
+	color: #929192;
+}
+#navigation > a > div {
+	width: 100%;
+	height: 60%;
+}
+#navigation > .home_page >div {
+	background: url(../img/home_page1.png) center center no-repeat;
+	background-size: .44rem;
+}
+#navigation > .classify >div {
+	background: url(../img/classify2.png)center center  no-repeat;
+	background-size: .39rem;
+}
+#navigation > .shopping_cart >div {
+	background: url(../img/shopping_cart2.png)center center  no-repeat;
+	background-size: .42rem .35rem;
+}
+#navigation > .mine >div {
+	background: url(../img/mine2.png)center center  no-repeat;
+	background-size: .36rem .38rem;
+}
+#return_top {
+	position: fixed;
+	right: .3rem;
+	bottom: 1.24rem;
+	width: .88rem;
+	height: .89rem;
+	background: url(../img/iconfont-fanhuidingbu.png) no-repeat;
+	background-size: .88rem .89rem;
+}
 
 
 /*@media screen and (min-width: 320px) {html{font-size:50px;}}
