@@ -170,6 +170,22 @@ i.iconfont {
 	}
 }
 
+@media screen and (max-width: 470px) {
+	.box-circle, .percent {
+	    width: 80px;
+	    height: 80px;
+	    border-radius: 50%;
+	    border: 10px solid;
+	}
+	.box-circle {
+		line-height: 60px;
+		border-color: #aaa;
+	}
+	.percent {
+	    border-color: #696969;
+	    clip: rect(0 80px 80px 40px);
+	}
+}
 @media screen and (max-width: 750px) {
 	#box {
 		overflow: initial;
