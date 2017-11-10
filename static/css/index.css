@@ -119,6 +119,9 @@ i.iconfont {
     left: 0;
     color: #fff;
 }
+.details-mobil {
+	display: none;
+}
 .content5 {
 	/*background: pink;*/
 }
@@ -193,5 +196,8 @@ i.iconfont {
 	.content {
 		overflow: initial;
 		height: auto;
+	}
+	.details-mobil {
+		display: block;
 	}
 }
