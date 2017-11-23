@@ -93,7 +93,6 @@ $(function () {
 	//移入移出头部导航条字体改变颜色
     $("header .list_inline li").hover(function () {
     	$("header .list_inline li a").eq($(this).index()).css("color", "#00dfb9");
-		getILeft();
     }, function () {
     	$("header .list_inline li a").css("color", "#ccc").eq(i).css("color", "#00dfb9");
     });
@@ -113,7 +112,7 @@ $(function () {
   	  $("header .list_inline li a").css("color", "#ccc").eq(i).css("color", "#00dfb9");
     }
     
-    //封装头部导航条横线定位
+    //封装头部导航条横线点位
 	function getILeft () {
 		if (onoffHd) {
 			onoffHd = false;
@@ -162,7 +161,6 @@ $(function () {
 		starX = ev.pageX;
 		//contentX当前位置的水平定位
 		ctX = parseInt($(".contentX").css("left"));
-		x = 0;
 		$(".contentX").on("mousemove", function (ev) {
 			//弹起时鼠标的x坐标
 			endX = ev.pageX;
@@ -170,45 +168,45 @@ $(function () {
 			x = endX - starX;
 			$(".contentX").css("left", ctX + x);
 		});
-		$("body").on("mouseup", function () {
-			console.log(x)
-			$(".contentX").off("mousemove");
-			//向右拖动
-			if (x > 0) {
-				if (x > ctItW/2) {
-					k--;
-					if (k == 0) {
-						$(".contentX").animate({left: -k * ctItW}, "fast", "linear", function () {
-							$(".contentX").css("left", -4 * ctItW);
-						});
-						k = 4;
-					}else {
-						$(".contentX").animate({left: -k * ctItW}, "fast", "linear");
-					}
+	});
+	$("body").on("mouseup", function () {
+		$(".contentX").off("mousemove");
+		//向右拖动
+		if (x > 0) {
+			if (x > ctItW/2) {
+				k--;
+				if (k == 0) {
+					$(".contentX").animate({left: -k * ctItW}, "fast", "linear", function () {
+						$(".contentX").css("left", -4 * ctItW);
+					});
+					k = 4;
 				}else {
+					
 					$(".contentX").animate({left: -k * ctItW}, "fast", "linear");
 				}
-			//向左拖动
 			}else {
-				if (x < -ctItW/2) {
-					k++;
-					if (k == 5) {
-						$(".contentX").animate({left: -k * ctItW}, "fast", "linear", function () {
-							$(".contentX").css("left", -1 * ctItW);
-						});
-						k = 1;
-					}else {
-						
-						$(".contentX").animate({left: -k * ctItW}, "fast", "linear");
-					}
+				$(".contentX").animate({left: -k * ctItW}, "fast", "linear");
+			}
+		//向左拖动
+		}else {
+			if (x < -ctItW/2) {
+				k++;
+				if (k == 5) {
+					$(".contentX").animate({left: -k * ctItW}, "fast", "linear", function () {
+						$(".contentX").css("left", -1 * ctItW);
+					});
+					k = 1;
 				}else {
+					
 					$(".contentX").animate({left: -k * ctItW}, "fast", "linear");
 				}
+			}else {
+				$(".contentX").animate({left: -k * ctItW}, "fast", "linear");
 			}
-			//页面对应的右下角导航条改变颜色
-			$(".guide > div").eq(k - 1).addClass("active").siblings().removeClass("active");
-		});
-		roll();
+		}
+		//页面对应的右下角导航条改变颜色
+		$(".guide > div").eq(k - 1).addClass("active").siblings().removeClass("active");
+//		roll();
 	});
 	
 	//右下角导航条
@@ -247,7 +245,6 @@ $(function () {
 	//点击打开/关闭导航条
 	var onoff2 = true;
 	$("a.switch").on("click", function () {
-		console.log(123)
 		if (onoff2 === true) {
 			$("ul.icon").css("right", -70);
 			$(this).addClass("off");

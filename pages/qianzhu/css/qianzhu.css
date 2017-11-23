@@ -1067,7 +1067,6 @@ header .bg {
     position: relative;
     background: url(../img/wp7.jpg) 50% 60%;
     background-size: cover;
-    /*height: 622px;*/
 }
 .content7 .menu {
 	position: absolute;
@@ -1232,7 +1231,6 @@ header .bg {
     position: relative;
     background: url(../img/wp8.jpg) 50% bottom;
     background-size: cover;
-    /*height: 622px;*/
     overflow: hidden;
 }
 .content8 .box {
@@ -1300,7 +1298,6 @@ header .bg {
 .content9 {
 	background: url(../img/wp3.jpg) 50% bottom;
 	background-size: cover;
-	height: 622px;
 	position: relative;
 }
 .content9 .box {
