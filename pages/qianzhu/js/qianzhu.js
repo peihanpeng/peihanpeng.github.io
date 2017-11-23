@@ -169,7 +169,7 @@ $(function () {
 			$(".contentX").css("left", ctX + x);
 		});
 	});
-	$("body").on("mouseup", function () {
+	$(".content1").on("mouseup", function () {
 		$(".contentX").off("mousemove");
 		//向右拖动
 		if (x > 0) {
