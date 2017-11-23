@@ -206,7 +206,7 @@ $(function () {
 		}
 		//页面对应的右下角导航条改变颜色
 		$(".guide > div").eq(k - 1).addClass("active").siblings().removeClass("active");
-//		roll();
+		roll();
 	});
 	
 	//右下角导航条
