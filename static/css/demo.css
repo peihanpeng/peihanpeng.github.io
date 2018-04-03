@@ -35,6 +35,7 @@ body {
 .content .container {
 	padding-top: 150px;
 }
+
 .content1 .container p {
 	text-indent: 2em;
 }
@@ -218,5 +219,10 @@ i.iconfont {
 	}
 	.details-mobil {
 		display: block;
+	}
+}
+@media screen and (max-height: 750px) {
+	.content5 .container {
+		padding-top: 60px;
 	}
 }
